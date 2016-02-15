@@ -1,0 +1,33 @@
+{
+  "name": "pm2-exporter",
+  "version": "0.1.0",
+  "description": "PM2 Beanstalkd exporter",
+  "main": "pm2_exporter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bblok11/pm2_exporter.git"
+  },
+  "keywords": [
+    "prometheus",
+    "pm2",
+    "exporter"
+  ],
+  "author": "Bart Blok",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bblok11/pm2_exporter/issues"
+  },
+  "homepage": "https://github.com/bblok11/pm2_exporter#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "express": "^4.13.4",
+    "prometheus-client": "^0.1.1",
+    "underscore": "^1.8.3",
+    "yargs": "^3.32.0",
+    "pm2": "^1.0.1"
+
+  }
+}
