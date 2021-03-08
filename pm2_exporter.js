@@ -100,8 +100,8 @@ function update(req, res, updateCallback) {
 
                 up.set(processObj, item.pm2_env.status == 'online' ? 1 : 0);
                 uptime.set(processObj, new Date().getTime() - item.pm2_env.pm_uptime);
-                instances.set(processObj, item.pm2_env.instances);
-                restarts.set(processObj, item.pm2_env.unstable_restarts);
+                instances.set(processObj, item.pm2_env.instances || 1);
+                restarts.set(processObj, item.pm2_env.unstable_restarts || 0);
                 memory.set(processObj, item.monit.memory);
                 cpu.set(processObj, item.monit.cpu);
             });
